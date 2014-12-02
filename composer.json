@@ -1,0 +1,26 @@
+{
+	"name": "phpbbmodders/annualstars",
+	"type": "phpbb-extension",
+	"description": "Displays stars based on a users registration date",
+	"homepage": "https://github.com/phpbbmodders/phpbb-3.1-annualstars",
+	"version": "1.0.0",
+	"time": "2014-12-01",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Rich McGirr",
+			"email": "rmcgirr83@rmcgirr83.org",
+			"homepage": "http://rmcgirr83.org",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3"
+	},
+	"extra": {
+		"display-name": "Annual Stars",
+		"soft-require": {
+			"phpbb/phpbb": "3.1.*@dev"
+		}
+	}
+}
