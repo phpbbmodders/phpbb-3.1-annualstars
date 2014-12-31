@@ -28,6 +28,7 @@ class listener implements EventSubscriberInterface
 	{
 		return array(
 			'core.viewtopic_cache_user_data'	=> 'viewtopic_cache_user_data',
+			'core.viewtopic_cache_guest_data'	=> 'viewtopic_cache_guest_data',
 			'core.viewtopic_modify_post_row'	=> 'viewtopic_modify_post_row',
 			'core.memberlist_view_profile'		=> 'memberlist_view_profile',
 		);
@@ -48,13 +49,16 @@ class listener implements EventSubscriberInterface
 
 	public function viewtopic_cache_user_data($event)
 	{
-		// we don't care about anonymous posters
-		if ($event['poster_id'] == ANONYMOUS)
-		{
-			return;
-		}
 		$array = $event['user_cache_data'];
 		$stars = $this->annual_stars($event['row']['user_regdate']);
+		$array['annual_stars'] = $stars;
+		$event['user_cache_data'] = $array;
+	}
+
+	public function viewtopic_cache_guest_data($event)
+	{
+		$array = $event['user_cache_data'];
+		$stars = '';
 		$array['annual_stars'] = $stars;
 		$event['user_cache_data'] = $array;
 	}
