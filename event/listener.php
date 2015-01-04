@@ -90,8 +90,13 @@ class listener implements EventSubscriberInterface
 			{
 				$reg_output = sprintf($this->user->lang['YEARS_OF_MEMBERSHIP'], $reg_years);
 			}
-			$stars = str_repeat('<img src="./ext/phpbbmodders/annualstars/styles/prosilver/imageset/icon_annual_star.gif" title="' . $reg_output . '" alt="' . $reg_output . '" />', $reg_years);
+			$stars = str_repeat($this->generate_stars($reg_output), $reg_years);
 		}
 		return $stars;
+	}
+
+	private function generate_stars($reg_output)
+	{
+		return '<span class="imageset icon_annual_star" title="' . $reg_output . '"></span>';
 	}
 }

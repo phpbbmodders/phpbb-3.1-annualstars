@@ -1,0 +1,9 @@
+.imageset.icon_annual_star {
+	background-image: url("icon_annual_star.gif");
+	background-repeat: no-repeat;
+	padding-right: 1px;
+	padding-top: 1px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
