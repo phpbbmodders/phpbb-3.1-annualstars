@@ -33,8 +33,8 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 $lang = array_merge($lang, array(
 // annual stars
-	'LENGTH_OF_MEMBERSHIP'	=> 'Years of membership',
-	'YEARS_OF_MEMBERSHIP'	=> '%d years of membership',
-	'YEAR_OF_MEMBERSHIP'	=> '%d year of membership',
-	'IMG_ICON_ANNUAL_STAR'	=> 'Annual star',
+	'LENGTH_OF_MEMBERSHIP'	=> 'سنوات العضوية ',
+	'YEARS_OF_MEMBERSHIP'	=> '%d سنوات عضوية',
+	'YEAR_OF_MEMBERSHIP'	=> '%d سنة عضوية',
+	'IMG_ICON_ANNUAL_STAR'	=> 'نجمة سنوية',
 ));
