@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "Displays stars based on a users registration date",
 	"homepage": "https://github.com/phpbbmodders/phpbb-3.1-annualstars",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"time": "2015-01-04",
 	"license": "GPL-2.0",
 	"authors": [
