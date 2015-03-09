@@ -5,6 +5,7 @@ Extension will display stars for the number of years a user has been registered 
 
 This extension is the 3.1.x version of the 3.0.x Annual Stars Mod](https://www.phpbb.com/customise/db/mod/annual_stars_2/)
 
+[![Build Status](https://travis-ci.org/phpbbmodders/phpbb-3.1-annualstars.svg?branch=master)](https://travis-ci.org/phpbbmodders/phpbb-3.1-annualstars)
 ## Installation
 
 ### 1. clone
