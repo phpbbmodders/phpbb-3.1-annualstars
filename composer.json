@@ -20,7 +20,7 @@
 	"extra": {
 		"display-name": "Annual Stars",
 		"soft-require": {
-			"phpbb/phpbb": "3.1.*@dev"
+			"phpbb/phpbb": ">=3.1.2,<3.2.*@dev"
 		}
 	}
 }
