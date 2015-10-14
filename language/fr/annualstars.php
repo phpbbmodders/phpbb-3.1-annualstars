@@ -40,8 +40,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 // annual stars
-	'LENGTH_OF_MEMBERSHIP'	=> 'Années d’adhésion ',
-	'YEARS_OF_MEMBERSHIP'	=> 'Années d’adhésion : %d',
-	'YEAR_OF_MEMBERSHIP'	=> 'Année d’adhésion : %d',
+	'LENGTH_OF_MEMBERSHIP'	=> 'Années d’adhésion',
+	'YEARS_OF_MEMBERSHIP'	=> 'Années d’adhésion : %d',
+	'YEAR_OF_MEMBERSHIP'	=> 'Année d’adhésion : %d',
 	'IMG_ICON_ANNUAL_STAR'	=> 'Étoile par année',
 ));
