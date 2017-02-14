@@ -27,7 +27,6 @@ class listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return array(
-			'core.user_setup'					=> 'load_language_on_setup',
 			'core.viewtopic_cache_user_data'	=> 'viewtopic_cache_user_data',
 			'core.viewtopic_cache_guest_data'	=> 'viewtopic_cache_guest_data',
 			'core.viewtopic_modify_post_row'	=> 'viewtopic_modify_post_row',
@@ -46,30 +45,6 @@ class listener implements EventSubscriberInterface
 	{
 		$this->template = $template;
 		$this->user = $user;
-	}
-
-	/**
-	* Load language files during user setup
-	*
-	* @param object $event The event object
-	* @return null
-	* @access public
-	*/
-	public function load_language_on_setup($event)
-	{
-		// what page are we on?
-		$page_name = substr($this->user->page['page_name'], 0, strpos($this->user->page['page_name'], '.'));
-
-		// We only care about memberlist and viewtopic
-		if (in_array($page_name, array('viewtopic', 'memberlist')))
-		{
-			$lang_set_ext = $event['lang_set_ext'];
-			$lang_set_ext[] = array(
-				'ext_name' => 'phpbbmodders/annualstars',
-				'lang_set' => 'annualstars',
-			);
-			$event['lang_set_ext'] = $lang_set_ext;
-		}
 	}
 
 	public function viewtopic_cache_user_data($event)
@@ -104,6 +79,7 @@ class listener implements EventSubscriberInterface
 
 	private function annual_stars($reg_date)
 	{
+		$this->user->add_lang_ext('phpbbmodders/annualstars', 'annualstars');
 		$stars = '';
 		if ($reg_years = (int) ((time() - (int) $reg_date) / 31536000))
 		{
