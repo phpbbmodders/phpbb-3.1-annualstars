@@ -4,7 +4,7 @@
 * annual stars [Arabic]
 *
 * @package language
-* @copyright (c) 2014 Richard McGirr 
+* @copyright (c) 2014 Richard McGirr
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 * Translators: Bassel Taha Alhitary - www.alhitary.net

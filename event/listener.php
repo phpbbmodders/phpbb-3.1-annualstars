@@ -85,7 +85,7 @@ class listener implements EventSubscriberInterface
 		{
 			$reg_output = sprintf($this->user->lang['YEAR_OF_MEMBERSHIP'], $reg_years);
 
-			if($reg_years > 1)
+			if ($reg_years > 1)
 			{
 				$reg_output = sprintf($this->user->lang['YEARS_OF_MEMBERSHIP'], $reg_years);
 			}
