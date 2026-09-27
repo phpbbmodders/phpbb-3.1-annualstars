@@ -2,16 +2,29 @@
 	"name": "phpbbmodders/annualstars",
 	"type": "phpbb-extension",
 	"description": "Displays stars based on a users registration date",
-	"homepage": "https://github.com/phpbbmodders/phpbb-3.1-annualstars",
+	"homepage": "https://www.phpbbmodders.com/",
 	"version": "1.0.2",
 	"time": "2017-02-14",
-	"license": "GPL-2.0",
+	"keywords": [
+		"phpbb",
+		"extension",
+		"annual-stars",
+		"membership",
+		"profile"
+	],
+	"license": "GPL-2.0-only",
 	"authors": [
+		{
+			"name": "phpBB Modders",
+			"email": "board@phpbbmodders.com",
+			"homepage": "https://www.phpbbmodders.com/",
+			"role": "Extension Developer"
+		},
 		{
 			"name": "Rich McGirr",
 			"email": "rmcgirr83@rmcgirr83.org",
 			"homepage": "http://rmcgirr83.org",
-			"role": "Developer"
+			"role": "Past Developer"
 		}
 	],
 	"require": {
@@ -20,12 +33,12 @@
 	"extra": {
 		"display-name": "Annual Stars",
 		"soft-require": {
-            "phpbb/phpbb": ">=3.1.2"
-        },
-        "version-check": {
-            "host": "www.phpbb.com",
-            "directory": "/customise/db/extension/annualstars31",
-            "filename": "version_check"
+			"phpbb/phpbb": ">=3.1.2"
+		},
+		"version-check": {
+			"host": "www.phpbb.com",
+			"directory": "/customise/db/extension/annualstars31",
+			"filename": "version_check"
 		}
 	}
 }
