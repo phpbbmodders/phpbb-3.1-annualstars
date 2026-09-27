@@ -1,13 +1,13 @@
 <?php
 /**
-*
-* annual stars [English]
-*
-* @package language
-* @copyright (c) 2014 Richard McGirr
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
+ *
+ * Annual Stars extension for the phpBB Forum Software package
+ *
+ * @copyright (c) 2014 Richard McGirr
+ * @copyright (c) 2026, phpBB Modders, https://www.phpbbmodders.com/
+ * @license GNU General Public License, version 2 (GPL-2.0)
+ *
+ */
 
 /**
 * DO NOT CHANGE
