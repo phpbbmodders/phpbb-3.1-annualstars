@@ -28,12 +28,12 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3"
+		"php": ">=7.4"
 	},
 	"extra": {
 		"display-name": "Annual Stars",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.2"
+			"phpbb/phpbb": ">=3.3.19,<4.0.0@dev"
 		},
 		"version-check": {
 			"host": "www.phpbb.com",
