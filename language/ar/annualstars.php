@@ -7,6 +7,8 @@
  * @copyright (c) 2026, phpBB Modders, https://www.phpbbmodders.com/
  * @license GNU General Public License, version 2 (GPL-2.0)
  *
+ * Translators: Bassel Taha Alhitary - www.alhitary.net
+ *
  */
 /**
 * DO NOT CHANGE
