@@ -1,7 +1,7 @@
 {
 	"name": "phpbbmodders/annualstars",
 	"type": "phpbb-extension",
-	"description": "Displays stars based on a users registration date",
+	"description": "Shows a star for each year a member has been registered, on their posts and profile.",
 	"homepage": "https://www.phpbbmodders.com/",
 	"version": "1.0.2",
 	"time": "2017-02-14",
